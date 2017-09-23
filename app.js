@@ -7,4 +7,4 @@ require('./routes')(app);
 
 app.use(require('koa-static')('public'));
 
-app.listen(3007);
+app.listen(80);

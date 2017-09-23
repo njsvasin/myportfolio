@@ -1,12 +1,12 @@
 {
   "name": "myportfolio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
   "repository": "git@bitbucket.org:Impulsez/myportfolio.git",
   "author": "Sergey nJS Vasin <njsvasin@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "NODE_PATH=. node app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "koa": "^2.3.0",
