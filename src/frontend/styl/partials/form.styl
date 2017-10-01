@@ -1,0 +1,39 @@
+.form-control
+  padding 0 $indent-small
+  border 1px solid $color-grey-x-light
+  font-size $font-size-x-small
+  background $color-white
+  transition all $delay_mid ease-in-out $delay_nul
+
+  &:focus
+    border-color $color-grey-light
+
+  &:hover
+  &:active
+    box-shadow none
+
+.input-group
+  .form-control
+    z-index auto
+
+.input-group-addon
+  background $color-grey-x-light
+  border 2px solid $color-grey-x-light
+  padding $indent-xx-small $indent-small
+  font-weight 700
+
+.input-lg
+.form-horizontal .form-group-lg .form-control
+  height $indent-large
+  font-size $font-size-small
+
+.input-sm
+.form-horizontal .form-group-sm .form-control
+  font-size $font-size-x-small
+  height $indent-medium
+
+textarea
+  &.form-control
+    padding $indent-small
+    max-width 100%
+    min-width 100%

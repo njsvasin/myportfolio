@@ -7,7 +7,7 @@ require('./routes')(app);
 
 app.use(require('koa-static')('public'));
 
-const server = app.listen(process.env.PORT || 5000, () => {
+const server = app.listen(process.env.PORT || 3000, () => {
   const port = server.address().port;
-  console.log("Express is working on port " + port);
+  console.log("Koa is working on port " + port);
 });

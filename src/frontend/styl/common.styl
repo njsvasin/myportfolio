@@ -1,0 +1,30 @@
+body
+  font 300 14px/1.8 $font-raleway
+  color $color-grey-mid
+  overflow-x hidden
+
+img
+  max-width 100%
+  height auto
+
+a
+  transition all $delay_low ease-in-out $delay_nul
+
+.link
+  &:hover
+    text-decoration none
+
+  &--on-dark
+    color $color-yellow-goldy
+
+    &:hover
+      text-decoration none
+      color $color-yellow
+
+.btn
+  box-shadow none
+  transition all $delay_low ease-in-out $delay_nul
+
+
+.viewport-full-height
+  height 100vh
