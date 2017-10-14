@@ -2,6 +2,8 @@ extends:
   airbnb
 
 rules:
+  indent: ["error", "tab"]
+  no-tabs: "off"
   jsx-a11y/href-no-hash: "off"
   jsx-a11y/anchor-is-valid: ["warn", { "aspects": ["invalidHref"] }]
 

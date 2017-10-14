@@ -1,18 +1,32 @@
-footer#footer
-  .container
-    .row
-      .col-sm-12
-        ul.social-links
-          li: a.wow.fadeInUp(href="index.html#"): i.fa.fa-facebook
-          li: a.wow.fadeInUp(href="index.html#" data-wow-delay=".1s"): i.fa.fa-twitter
-          li: a.wow.fadeInUp(href="index.html#" data-wow-delay=".2s"): i.fa.fa-google-plus
-          li: a.wow.fadeInUp(href="index.html#" data-wow-delay=".4s"): i.fa.fa-pinterest
-          li: a.wow.fadeInUp(href="index.html#" data-wow-delay=".5s"): i.fa.fa-envelope
+footer.footer
+	.grid.grid--container
+		.row
+			.col.col--sm-12
+				ul.social-links
+					li: a.social-links__item.wow.fadeInUp(
+							title="upwork" href="//www.upwork.com/freelancers/~01bc89eb208678307c"
+							target="_blank" rel="no-follow"
+							data-wow-delay=".1s"
+						)
+						i.icon-upwork
+					li: a.social-links__item.wow.fadeInUp(
+							title="facebook" href="//www.facebook.com/vasinceo"
+							target="_blank" rel="no-follow"
+							data-wow-delay=".2s"
+						)
+						i.icon-facebook
+					li: a.social-links__item.wow.fadeInUp(
+							title="linkedin" href="//www.linkedin.com/in/pulsez/"
+							target="_blank" rel="no-follow"
+							data-wow-delay=".3s"
+						)
+						i.icon-linkedin
+					li: a.social-links__item.wow.fadeInUp(
+							title="email" href="mailto:sergey@njsvasin.pro"
+							data-wow-delay=".4s"
+						)
+						i.icon-mail
 
-        p.heart
-          | from Russia with
-          |
-          span.fa.fa-heart.fa-2x.animated.pulse
+				p made with #[i.heart.icon-heart] Passion
 
-        p.copyright
-          | © 2017 Sergei nJS Vasin
+				p © 2017 Sergey nJS Vasin

@@ -1,62 +1,89 @@
-.navbar
-    a
-      transition all $delay_mid ease-in-out $delay_nul
+.brand
+	text-transform none
+	text-decoration none
+	color $color-grey-dark
+	font-family Lobster, cursive
+	font-size 2.2rem
+	font-weight bold
 
-    &-custom
-     .dropdown-menu
-        box-shadow none
+.navigation
+	position sticky
+	top 0
+	z-index 3
+	background-color $color-yellow
 
-.header
-  border-bottom 1px solid #F0DB4F
-  position relative
-  width 100%
-  z-index 998
-  transition top 0.3s
-  &.nav-up
-    top -51px !important
+.nav
+	display flex
+	flex-wrap wrap
+	letter-spacing .3rem
 
-.navbar-custom
-  border 0
-  border-radius 0
-  margin 0
-  text-transform uppercase
-  font-family Raleway, sans-serif
-  .navbar-brand
-    font-weight 700
-    font-size 22px
-    font-family Lobster, cursive
-  .dropdown-menu
-    border 0
-    border-top 2px solid #F0DB4F
-    border-radius 0
-    & > li
-      & > a
-        padding 10px 20px
-  .navbar-toggle
-    .icon-bar
-      background #222
+	&__toggler
+		display none
+		padding $indent-x-small
+		margin auto 0
+		background-color transparent
+		border none
 
-.navbar-custom,
-.navbar-custom .dropdown-menu
-  background #F0DB4F
-  padding 0
+		&-icon
+			display block
+			width 22px
+			height 2px
+			border-radius 1px
+			background-color $color-grey-dark
 
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-nav > li > a,
-.navbar-custom .navbar-nav .dropdown-menu > li > a
-  font-size 11px
-  letter-spacing 3px
-  color #222
+			+.nav__toggler-icon
+				margin-top 4px
 
-.navbar-custom .nav li.active,
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus,
-.navbar-custom .navbar-nav > li.active a
-  background none
-  font-weight bold
-  outline 0
+	&__header
+		align-self center
 
-.navbar-custom .nav .open > a,
-.navbar-custom .dropdown-menu > li > a:hover,
-.navbar-custom .dropdown-menu > li > a:focus
-  background #f5f5f5
+	&__menu
+		display flex
+		margin auto 0 auto auto
+		padding 0
+		list-style none
+
+	&__item
+		display block
+		position relative
+		padding $indent-small
+		font-size 1.2rem
+		text-transform uppercase
+		text-decoration none
+		color $color-grey-dark
+
+		&::before
+			content ''
+			position absolute
+			bottom 0
+			left 50%
+			right 50%
+			height .4rem
+			background-color $color-grey-light
+			transition-property left, right
+			transition-duration $delay_mid
+			transition-timing-function ease-out
+
+		&:hover
+		&:focus
+		&:active
+			&::before
+				left 0
+				right 0
+
+	@media (max-width: $breakpoints.md)
+		&__menu
+			flex-basis 100%
+			display block
+			margin-left 0
+			max-height 0
+			overflow hidden
+			font-size $font-size-x-small
+			transition max-height $delay_mid
+
+			&.nav__menu--expanded
+				max-height 310px
+
+		&__toggler
+			display block
+			margin-left auto

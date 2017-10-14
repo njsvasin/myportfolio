@@ -1,47 +1,61 @@
-section#services.pfblock.pfblock-gray
-  .container
-    .row
-      .col-sm-6.col-sm-offset-3
+- const service = [
+-		{
+-			title: 'SOLUTION of your problem',
+-			text: 'especially if it requires to use the latest technology, creativity',
+-		},
+-		{
+-			title: 'world-class QUALITY',
+-			text: 'in an adequate time',
+-		},
+-		{
+-			title: 'clear code',
+-			text: 'SEO friendly, easy-to-understand, easy-to-maintain, clear code',
+-		},
+-		{
+-			title: 'increasing the PRODUCTIVITY',
+-			text: 'of your site',
+-		},
+-		{
+-			title: 'increasing TRAFFIC',
+-			text: 'to your site',
+-		},
+-		{
+-			title: 'increasing the CONVERSION',
+-			text: 'of your visitors',
+-		},
+-		{
+-			title: 'and as a result',
+-			text: 'an increase in PROFITS from your project',
+-		},
+-		{
+-			title: 'friendly respectable attitude',
+-			text: 'and a SINCERE DESIRE to help in YOUR task',
+-		},
+-		{
+-			title: 'excellent COMMUNICATIONS',
+-			text: '',
+-		},
+-		{
+-			title: 'energy, power and time',
+-			text: 'the PASSION-working person',
+-		},
+- ];
 
-        .pfblock-header.wow.fadeInUp
-          h2.pfblock-title This is what I do
-          div.pfblock-line
-          div.pfblock-subtitle
-            | No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+section#services.screen-block.screen-block--gray
+	.grid.grid--container
+		.row
+			.col.col--sm-6.col--sm-offset-3
 
-    .row
-      .col-sm-3
-        .iconbox.wow.slideInLeft
-          .iconbox-icon: span.icon-magic-wand
+				.screen-block__header.wow.fadeInUp
+					h2.screen-block__title With me you will receive
+					div.screen-block__line
 
-          .iconbox-text
-            h3.iconbox-title Web Design
-            .iconbox-desc
-              | Good things come to those who wait, but only the things left by those who hustle
+		.row
+			each val in service
+				.col.col--sm-3
+					.iconbox.wow.slideInLeft
+						.iconbox__icon: span.icon-magic-wand
 
-      .col-sm-3
-        .iconbox.wow.slideInLeft
-          .iconbox-icon: span.icon-magic-wand
-
-          .iconbox-text
-            h3.iconbox-title Web Programming
-            .iconbox-desc
-              | Good things come to those who wait, but only the things left by those who hustle
-
-      .col-sm-3
-        .iconbox.wow.slideInLeft
-          .iconbox-icon: span.icon-magic-wand
-
-          .iconbox-text
-            h3.iconbox-title Branding
-            .iconbox-desc
-              | Good things come to those who wait, but only the things left by those who hustle
-
-      .col-sm-3
-        .iconbox.wow.slideInLeft
-          .iconbox-icon: span.icon-magic-wand
-
-          .iconbox-text
-            h3.iconbox-title Consultation
-            .iconbox-desc
-              | Good things come to those who wait, but only the things left by those who hustle
+						.iconbox__text
+							h3.iconbox__title= val.title
+							.iconbox__desc= val.text

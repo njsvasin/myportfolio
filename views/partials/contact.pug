@@ -1,0 +1,25 @@
+section#contact.screen-block
+	.grid.grid--container
+		.row
+			.col.col--sm-6.col--sm-offset-3
+				.screen-block__header
+					h2.screen-block__title Drop me a line
+					.screen-block__line
+					.screen-block__subtitle
+						| No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+
+		.row
+			.col.col--sm-6.col--sm-offset-3
+				form.form(data-contact-form)
+					.form--group.wow.fadeInUp
+						input.form--control(type="text" name="name" placeholder="Name")
+
+					.form--group.wow.fadeInUp(data-wow-delay=".1s")
+						input.form--control(type="email" name="email" placeholder="E-mail")
+
+					.form--group.wow.fadeInUp(data-wow-delay=".2s")
+						textarea.form--control(name="message" rows="7" placeholder="Message")
+
+					button.btn.btn--full-width.wow.fadeInUp(type="submit" data-wow-delay=".3s") Send Message
+
+				.ajax-response

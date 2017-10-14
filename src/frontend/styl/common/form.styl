@@ -1,0 +1,19 @@
+.form
+	::placeholder
+		color $color-grey-light
+
+	&--group
+		margin-bottom $indent-small
+
+	&--control
+		margin-bottom 0
+		padding $indent-x-small $indent-small
+		width 100%
+		border 1px solid $color-grey-x-light
+		border-radius $border-radius
+
+		&:focus
+		&:active
+			outline none
+			border-color transparent
+			box-shadow 0 0 3px 1px $color-yellow

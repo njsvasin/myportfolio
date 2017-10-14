@@ -1,20 +1,18 @@
-header.header
-  nav.navbar.navbar-custom(role="navigation")
-    .container
-      .navbar-header
-        button.navbar-toggle(type="button" data-toggle="collapse" data-target="#custom-collapse")
-          span.sr-only  Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
+section.navigation
+	.grid.grid--container
+		nav.nav(data-nav)
+			.nav__header
+				a.brand(href="#") Sergey nJS Vasin
 
-        a.navbar-brand(href="index.html" style="text-transform: none;") Sergei nJS Vasin
+			.nav__toggler(data-toggle="collapse")
+				span.nav__toggler-icon
+				span.nav__toggler-icon
+				span.nav__toggler-icon
 
-      .collapse.navbar-collapse#custom-collapse
-        ul.nav.navbar-nav.navbar-right
-          li: a(href="#home") Home
-          li: a(href="#services") Services
-          li: a(href="#portfolio") Works
-          li: a(href="#skills") Skills
-          li: a(href="#testimonials") Testimonials
-          li: a(href="#contact") Contact
+			ul.nav__menu(data-nav-menu)
+				li: a.nav__item(href="#") Home
+				li: a.nav__item(href="#services") Services
+				li: a.nav__item(href="#works") Works
+				li: a.nav__item(href="#skills") Skills
+				li: a.nav__item(href="#testimonials") Testimonials
+				li: a.nav__item(href="#contact") Contact

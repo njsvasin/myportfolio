@@ -1,23 +1,34 @@
-section#testimonials.pfblock.pfblock-gray
-  .container
-    .row
-      .col-sm-6.col-sm-offset-3
-        .pfblock-header.wow.fadeInUp
-          h2.pfblock-title What my clients say
-          .pfblock-line
-          .pfblock-subtitle
-            | No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+section#testimonials.screen-block.screen-block--gray
+	.grid.grid--container
+		.row
+			.col.col--sm-6.col--sm-offset-3
+				.screen-block__header.wow.fadeInUp
+					h2.screen-block__title What my clients say
+					.screen-block__line
 
-    .row
-      #cbp-qtrotator.cbp-qtrotator
-        .cbp-qtcontent
-          img(src="assets/images/client-1.jpg" alt="client-1")
-          blockquote
-            p Work with John was a pleasure. He understood exactly what I wanted and created an awesome site for my company.
-            footer Pino Caruso
+		.rotator
+			.rotator__progress
 
-        .cbp-qtcontent
-          img(src="assets/images/client-2.jpg" alt="client-2")
-          blockquote
-            p I'm really happy with the results. Get 100% satisfaction is difficult but Alex got it without problems.
-            footer Jane Doe
+			.rotator__content(data-rotator-content)
+				.row
+					.col.col--md-4.col--lg-3
+						img.rotator__image(src="/images/static/client-1.jpg" alt="client-1")
+
+					.col.col--md-8.col--lg-9.text--xs-center.text--md-left
+						blockquote.rotator__quote
+							p.rotator__text.
+								Work with Sergey was a pleasure. He understood exactly what I wanted and created
+								an awesome site for my company.
+							footer.rotator__footer Pino Caruso
+
+			.rotator__content(data-rotator-content)
+				.row
+					.col.col--md-4.col--lg-3
+						img.rotator__image(src="/images/static/client-2.jpg" alt="client-2")
+
+					.col.col--md-8.col--lg-9.text--xs-center.text--md-left
+						blockquote.rotator__quote
+							p.rotator__text.
+								I'm really happy with the results. Get 100% satisfaction is difficult
+								but Alex got it without problems.
+							footer.rotator__footer Jane Doe

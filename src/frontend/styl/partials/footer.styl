@@ -1,36 +1,39 @@
-#footer
-  background #222
-  text-align center
-  padding 40px 0
-  color #FFF
-  span
-    animationcount infinite
-    animation-iteration-count infinite
-    color #F0DB4F
+.footer
+	background $color-grey-dark
+	text-align center
+	padding $indent-large 0
+	color white
 
-.copyright
-  margin 0
-  a
-    border-bottom 1px dotted #fff
+.heart
+	animation 1s infinite pulse
+	color $color-yellow
 
 .social-links
-  list-style none
-  padding 0
-  margin 0 0 20px
-  li
-    display inline-block
-    margin 5px
-  a
-    width 36px
-    height 36px
-    display block
-    line-height 35px
-    text-align center
-    border 1px solid rgba(255, 255, 255, .1)
-    border-radius 3px
-    border-radius 3px
-    font-size 14px
-    color rgba(255, 255, 255, .2)
-    &:hover
-      border 1px solid rgba(255, 255, 255, .5)
-      color rgba(255, 255, 255, .8)
+	display inline-flex
+	list-style none
+	padding 0
+	margin 0 0 $indent-default
+
+	&__item
+		flex-centred-all()
+		width $indent-large
+		height $indent-large
+		margin $indent-xx-small
+		border 1px solid $color-white--alpha-10
+		border-radius $border-radius
+		color $color-white--alpha-20
+		transition color $delay_mid, border-color $delay_mid
+
+		&:hover
+			border-color $color-white--alpha-50
+			color $color-white--alpha-80
+
+@keyframes pulse
+	0%
+		transform scale(1)
+
+	50%
+		transform scale(1.1)
+
+	100%
+		transform scale(1)

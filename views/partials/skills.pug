@@ -1,24 +1,24 @@
 - const skillsItems = [
--   {name: 'Programming', percent: 99},
--   {name: 'Design', percent: 70},
--   {name: 'Marketing', percent: 80},
--   {name: 'UI / UX', percent: 90},
+-		{name: 'Programming', percent: 99},
+-		{name: 'Design', percent: 70},
+-		{name: 'Marketing', percent: 80},
+-		{name: 'UI / UX', percent: 90},
 - ];
 
-section#skills.pfblock.pfblock-gray
-  .container
-    .row.skills
-      .col-sm-6.col-sm-offset-3
-        .pfblock-header.wow.fadeInUp
-          h2.pfblock-title My Skills
-          .pfblock-line
-          .pfblock-subtitle
-            | No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
+section#skills.screen-block.screen-block--gray
+	.grid.grid--container
+		.row.skills
+			.col.col--sm-6.col--sm-offset-3
+				.screen-block__header.wow.fadeInUp
+					h2.screen-block__title My Skills
+					.screen-block__line
+					.screen-block__subtitle
+						| No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
 
-    .row
-      each val in skillsItems
-        - let p = val.percent
-        .col-sm-6.col-md-3.text-center
-          span.chart.easyPieChart(data-percent=`${p}` style="width: 140px; height: 140px; line-height: 140px;")
-            span.percent= p
-          h3.text-center= val.name
+		.row
+			each val in skillsItems
+				- let p = val.percent
+				.col.col--sm-6.col--md-3.text--xs-center
+					span.chart.easyPieChart(data-percent=`${p}` style="width: 140px; height: 140px; line-height: 140px;")
+						span.percent= p
+					h3.text--xs-center= val.name

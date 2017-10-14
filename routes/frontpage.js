@@ -1,3 +1,3 @@
 exports.get = (ctx) => {
-  ctx.render('frontpage');
+	ctx.render('frontpage');
 };

@@ -1,0 +1,50 @@
+@keyframes drop
+	0%
+		top 0
+		opacity 0
+
+	30%
+		top $indent-x-small
+		opacity 1
+
+	100%
+		top $indent-medium
+		opacity 0
+
+.scroll-down
+	position absolute
+	left 50%
+	bottom $indent-large
+	z-index 10
+	transform translateX(-50%)
+	height 50px
+	width 50px
+	border 2px solid white
+	border-radius 50%
+	text-align center
+
+	&__icon
+		position relative
+		color white
+		animation 1s linear infinite drop
+
+.scroll-up
+	position fixed
+	display none
+	bottom 2em
+	right 2em
+	z-index 1
+
+	a
+		flex-centred-all()
+		width $indent-large
+		height $indent-large
+		border-radius $border-radius
+		text-align center
+		background-color $color-grey-light--alpha-50
+		color white
+		transition background-color $delay_mid
+
+		&:hover
+		&:active
+			background-color $color-grey-light

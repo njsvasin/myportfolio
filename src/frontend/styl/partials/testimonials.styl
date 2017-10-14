@@ -1,0 +1,54 @@
+.rotator
+	position relative
+	margin auto
+	width 90%
+
+	&__content
+		position absolute
+		top 0
+		width 100%
+		min-height 200px
+		padding $indent-medium 0
+		border-top 1px solid $color-grey-xx-light
+		border-bottom 1px solid $color-grey-xx-light
+		opacity 0
+		transition opacity 1s
+
+		&.current
+			position relative
+			opacity 1
+
+	&__image
+		margin auto
+		border-radius $border-radius
+
+	&__progress
+		position absolute
+		background $color-yellow
+		height 1px
+		top 0
+		z-index 1
+		animation 8s linear infinite progress
+
+	&__quote
+		margin 0
+		padding 0
+
+	&__text
+		font-size 2.4rem
+		color $color-grey-light
+		margin auto
+
+	&__footer
+		margin-top $indent-default
+		font-size $font-size-small
+
+		&::before
+			content '― '
+
+@keyframes progress
+	0%
+		width 0
+
+	100%
+		width 100%

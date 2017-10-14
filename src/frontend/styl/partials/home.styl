@@ -1,0 +1,29 @@
+.home
+	height 100vh
+	background $color-grey-dark url(../images/cover.jpg) no-repeat
+	background-attachment fixed
+	background-position 50% 50%
+	background-size cover
+
+	&__overlay
+		background url(../images/pattern.png) repeat
+		height 100%
+
+.header
+	position absolute
+	width 100%
+	top 50%
+	left 0
+	padding 0 $indent-default
+	color white
+	text-align center
+	transform translate(0%, -50%)
+
+	&__main
+		text-transform none
+		color $color-yellow
+		font-weight 800
+
+	&__text
+		font-size 1.6rem
+		margin $indent-small 0
