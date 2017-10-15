@@ -1,3 +1,4 @@
+import './js/wow.config';
 import './js/navigation';
 import './js/testimonials';
 import './js/form';

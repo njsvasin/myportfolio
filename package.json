@@ -1,6 +1,6 @@
 {
   "name": "myportfolio",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "main": "app.js",
   "repository": "git@bitbucket.org:Impulsez/myportfolio.git",
   "author": "Sergey nJS Vasin <njsvasin@gmail.com>",
@@ -13,6 +13,8 @@
     "dev": "webpack-dev-server --hotOnly"
   },
   "dependencies": {
+    "coffee-loader": "^0.8.0",
+    "coffeescript": "^2.0.1",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",

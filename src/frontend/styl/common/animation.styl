@@ -7,6 +7,14 @@
 		opacity 1
 		transform none
 
+@keyframes slideInLeft
+	0%
+		transform translateX(-100%)
+		visibility visible
+
+	100%
+		transform translateX(0)
+
 @keyframes slideInRight
 	0%
 		transform translateX(100%)
@@ -15,8 +23,26 @@
 	100%
 		transform translateX(0)
 
+@keyframes zoomIn
+	0%
+		opacity 0
+		transform scale3d(.3, .3, .3)
+
+	50%
+		opacity 1
+
+.animated
+	animation-duration $delay_hi
+	animation-fill-mode both
+
 .fadeInUp
 	animation-name fadeInUp
 
+.slideInLeft
+	animation-name slideInLeft
+
 .slideInRight
 	animation-name slideInRight
+
+.zoomIn
+	animation-name zoomIn

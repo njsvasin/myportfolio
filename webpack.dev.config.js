@@ -88,6 +88,15 @@ const config = {
 					},
 				],
 			},
+			{
+				test: /\.coffee$/,
+				use: [
+					{
+						loader: 'coffee-loader',
+						options: { sourceMap: true },
+					},
+				],
+			},
 		],
 	},
 
