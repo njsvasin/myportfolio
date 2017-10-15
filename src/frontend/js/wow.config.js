@@ -1,4 +1,4 @@
-import { WOW } from '../vendor/wow.coffee';
+import { WOW } from 'wow';
 
 const wow = new WOW({});
 

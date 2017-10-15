@@ -32,7 +32,13 @@ const config = {
 	resolve: {
 		modules: [
 			'node_modules',
+			path.join('src', 'frontend', 'vendor'),
 		],
+		alias: {
+			canvasrenderer: 'easy-pie-chart/renderer/canvas',
+			easypiechart: 'easy-pie-chart/easypiechart',
+			wow: 'wow/wow.coffee',
+		},
 	},
 
 	module: {

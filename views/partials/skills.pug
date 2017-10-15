@@ -1,8 +1,8 @@
 - const skillsItems = [
--		{name: 'Programming', percent: 99},
--		{name: 'Design', percent: 70},
--		{name: 'Marketing', percent: 80},
--		{name: 'UI / UX', percent: 90},
+-		{name: 'Programming', percent: 100},
+-		{name: 'Design', percent: 95},
+-		{name: 'Marketing', percent: 95},
+-		{name: 'UI / UX', percent: 100},
 - ];
 
 section#skills.screen-block.screen-block--gray
@@ -15,10 +15,10 @@ section#skills.screen-block.screen-block--gray
 					.screen-block__subtitle
 						| No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.
 
-		.row
+		.row(data-chart-container)
 			each val in skillsItems
 				- let p = val.percent
 				.col.col--sm-6.col--md-3.text--xs-center
-					span.chart.easyPieChart(data-percent=`${p}` style="width: 140px; height: 140px; line-height: 140px;")
-						span.percent= p
+					span.chart(data-easy-pie-chart data-percent=`${p}`)
+						span.chart__percent= p
 					h3.text--xs-center= val.name
