@@ -1,9 +1,9 @@
 {
   "name": "myportfolio",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "app.js",
   "repository": "git@bitbucket.org:Impulsez/myportfolio.git",
-  "author": "Sergey nJS Vasin <njsvasin@gmail.com>",
+  "author": "Sergey nJS Vasin <sergey@njsvasin.pro>",
   "license": "MIT",
   "engines": {
     "node": "8.5.0"

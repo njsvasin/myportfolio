@@ -21,7 +21,7 @@ const config = {
 	devtool: 'inline-cheap-module-source-map',
 
 	devServer: {
-		host: '192.168.0.3',
+		host: 'localhost',
 		port: '8080',
 		proxy: {
 			'*': 'http://localhost:3000',
