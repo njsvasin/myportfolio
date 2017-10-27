@@ -13,15 +13,13 @@
 		min-width 100%
 		max-width 100%
 		margin auto
-		background $color-brown
 		text-align center
 		cursor pointer
 
 		&:hover
-			.hover-animation__image
-				opacity 0.4
-
 			.hover-animation__text-block
+				background-color rgba($color-grey-dark, .9)
+
 				&::before
 				&::after
 					opacity 1
@@ -35,7 +33,6 @@
 	&__image
 		display block
 		max-width 100%
-		transition opacity $delay_mid
 
 	&__text-block
 		position absolute
@@ -46,6 +43,7 @@
 		padding $indent-large
 		color white
 		font-size $font-size-medium
+		transition background-color $delay_mid
 
 		&::before
 		&::after

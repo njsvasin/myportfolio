@@ -10,5 +10,5 @@ app.use(require('koa-static')('public'));
 
 const server = app.listen(config.get('port'), () => {
 	const port = server.address().port;
-	console.log("Koa is working on port " + port);
+	console.log(`Koa is working on port ${port}`);
 });
