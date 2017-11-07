@@ -30,6 +30,25 @@
 				opacity 1
 				transform translate3d(0, 0, 0)
 
+		&.special
+			@media (min-width $breakpoints.lg)
+				.hover-animation__title
+					text-align left
+
+					span
+						display none
+
+					&::after
+						content 'c \00a0\00a0 lc'
+
+				&:hover
+					.hover-animation__title
+						span
+							display inline
+
+						&::after
+							content ''
+
 	&__image
 		display block
 		max-width 100%

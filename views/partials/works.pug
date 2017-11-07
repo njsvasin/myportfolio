@@ -1,7 +1,7 @@
 - const portfolioItems = [
 -	{title: '<strong>Chat</strong>', descr: 'with auth, mongo db and websockets', link: '//njsvasin.pro/chat-express-4'},
 -	{title: 'This <span>Portfolio</span>', descr: 'is made on NodeJS, Koa, pug, stylus, Webpack<br /> with Server Side Rendering', nolink: true},
--	{title: 'The <span>Shark</span>', descr: ' Lily likes to play with crayons and pencils', link: '//njsvasin.pro/'},
+-	{title: 'Credit-<span>calc</span>', descr: ' Lily likes to play with crayons and pencils', link: '//njsvasin.pro/credit-calc'},
 -	{title: 'Bang <span>Bang</span>', descr: ' Lily likes to play with crayons and pencils', link: '//njsvasin.pro/'},
 -	{title: 'Funny <span>Tortoise</span>', descr: ' Lily likes to play with crayons and pencils', link: '//njsvasin.pro/'},
 -	{title: 'Don\'t <span>Poke</span>', descr: ' Lily likes to play with crayons and pencils', link: '//njsvasin.pro/'},
@@ -21,7 +21,7 @@ section#works.screen-block
 			each val, i in portfolioItems
 				.col.col--xs-12.col--sm-4.col--md-4
 					.hover-animation.wow.zoomIn
-						figure.hover-animation__wrapper
+						figure.hover-animation__wrapper(class={special: i === 2})
 							mixin innerBlock
 								img.hover-animation__image(src=`/images/static/item-${i + 1}.jpg` alt=`img0${i}`)
 								figcaption.hover-animation__text-block
