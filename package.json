@@ -1,16 +1,14 @@
 {
   "name": "myportfolio",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "main": "app.js",
   "repository": "git@bitbucket.org:Impulsez/myportfolio.git",
   "author": "Sergey nJS Vasin <sergey@njsvasin.pro>",
   "license": "MIT",
-  "engines": {
-    "node": "8.5.0"
-  },
   "scripts": {
     "start": "node app.js",
-    "dev": "webpack-dev-server --hotOnly"
+    "dev": "webpack-dev-server --hotOnly",
+    "build": "NODE_ENV=production webpack"
   },
   "dependencies": {
     "coffee-loader": "^0.8.0",
