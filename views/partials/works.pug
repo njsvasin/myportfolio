@@ -1,10 +1,10 @@
 - const portfolioItems = [
--	{title: '<strong>Chat</strong>', descr: 'with auth, mongo db and websockets', link: '//njsvasin.pro/chat-express-4'},
--	{title: 'This <span>Portfolio</span>', descr: 'is made on NodeJS, Koa, pug, stylus, Webpack<br /> with Server Side Rendering', nolink: true},
--	{title: 'Auto <span>update</span>', descr: 'Vanilla NodeJS console webscrapper for auto-update of remains <span class="no-wrap">in the e-shop</span>', nolink: '//njsvasin.pro/'},
 -	{title: '<span>Cash-plan</span>', descr: 'Angular 1 app', link: '//njsvasin.pro/cash-plan'},
 -	{title: 'Airport <span>board</span>', descr: 'Online static template with only html, css', link: '//njsvasin.pro/airport-board'},
 -	{title: 'Credit-<span>calc</span>', descr: 'Angular 4, pug, stylus, custom webpack config', link: '//njsvasin.pro/credit-calc'},
+-	{title: '<strong>Chat</strong>', descr: 'with auth, mongo db and websockets', link: '//njsvasin.pro/chat-express-4', nolink: true},
+-	{title: 'This <span>Portfolio</span>', descr: 'is made on NodeJS, Koa, pug, stylus, Webpack<br /> with Server Side Rendering', nolink: true},
+-	{title: 'Auto <span>update</span>', descr: 'Vanilla NodeJS console webscrapper for auto-update of remains <span class="no-wrap">in the e-shop</span>', nolink: '//njsvasin.pro/'},
 - ];
 
 section#works.screen-block
@@ -21,7 +21,7 @@ section#works.screen-block
 			each val, i in portfolioItems
 				.col.col--xs-12.col--sm-4.col--md-4
 					.hover-animation.wow.zoomIn
-						figure.hover-animation__wrapper(class={special: i === 5})
+						figure.hover-animation__wrapper(class={special: i === 2})
 							mixin innerBlock
 								img.hover-animation__image(src=`/images/static/item-${i + 1}.jpg` alt=`img0${i}`)
 								figcaption.hover-animation__text-block
